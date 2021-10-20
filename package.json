@@ -1,10 +1,10 @@
 {
-	"name": "@sushiswap/sushi-data",
+	"name": "@finaswap/fina-data",
 	"license": "MIT",
-	"version": "1.0.26",
-	"author": "SushiSwap",
+	"version": "1.0.0",
+	"author": "FinaSwap",
 	"main": "index",
-	"repository": "sushiswap/sushi-data",
+	"repository": "finaswap/fina-data",
 	"scripts": {
 		"lint": "eslint .",
 		"pack": "webpack --mode production",
