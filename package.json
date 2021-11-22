@@ -1,7 +1,7 @@
 {
 	"name": "@finaswap/fina-data",
 	"license": "MIT",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "FinaSwap",
 	"main": "index",
 	"repository": "finaswap/fina-data",
