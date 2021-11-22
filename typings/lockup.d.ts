@@ -6,11 +6,11 @@ type User = {
     pool: {
         id: string,
         balance: number,
-        accSushiPerShare: bigint
+        accFinaPerShare: bigint
     },
-    sushiAtLockup: number,
-    sushiHarvestedSinceLockup: number,
-    sushiLocked: number,
+    finaAtLockup: number,
+    finaHarvestedSinceLockup: number,
+    finaLocked: number,
 }
 
 export function user({ block, timestamp, user_address }: {

@@ -106,13 +106,13 @@ module.exports = {
 const info = {
     properties: [
         'id',
-        'sushiServed'
+        'finaServed'
     ],
 
     callback(results) {
         return ({
             address: results.id,
-            sushiServed: Number(results.sushiServed)
+            finaServed: Number(results.finaServed)
         });
     }
 }
@@ -124,19 +124,19 @@ const servings = {
         'pair',
         'token0',
         'token1',
-        'sushiServed',
+        'finaServed',
         'block',
         'timestamp'
     ],
 
     callback(results) {
-        return results.map(({ server, tx, pair, token0, token1, sushiServed, block, timestamp }) => ({
+        return results.map(({ server, tx, pair, token0, token1, finaServed, block, timestamp }) => ({
             serverAddress: server.id,
             tx: tx,
             pair: pair,
             token0: token0,
             token1: token1,
-            sushiServed: Number(sushiServed),
+            finaServed: Number(finaServed),
             block: Number(block),
             timestamp: Number(timestamp * 1000),
             date: new Date(timestamp * 1000)
@@ -147,19 +147,19 @@ const servings = {
 const servers = {
     properties: [
         'id',
-        'sushiServed',
-        'servings(first: 1000, orderBy: block, orderDirection: desc) { tx, block, pair, sushiServed }'
+        'finaServed',
+        'servings(first: 1000, orderBy: block, orderDirection: desc) { tx, block, pair, finaServed }'
     ],
 
     callback(results) {
-        return results.map(({ id, sushiServed, servings }) => ({
+        return results.map(({ id, finaServed, servings }) => ({
             serverAddress: id,
-            sushiServed: Number(sushiServed),
-            servings: servings.map(({ tx, block, pair, sushiServed}) => ({
+            finaServed: Number(finaServed),
+            servings: servings.map(({ tx, block, pair, finaServed}) => ({
                 tx,
                 block: Number(block),
                 pair,
-                sushiServed: Number(sushiServed)
+                finaServed: Number(finaServed)
             })),
         }));
     }

@@ -1,18 +1,18 @@
 type Info = {
     decimals: number;
     name: string;
-    sushi: string;
+    fina: string;
     symbol: string;
     totalSupply: number;
     ratio: number;
-    xSushiMinted: number;
-    xSushiBurned: number;
-    sushiStaked: number;
-    sushiStakedUSD: number;
-    sushiHarvested: number;
-    sushiHarvestedUSD: number;
-    xSushiAge: number;
-    xSushiAgeDestroyed: number;
+    xFinaMinted: number;
+    xFinaBurned: number;
+    finaStaked: number;
+    finaStakedUSD: number;
+    finaHarvested: number;
+    finaHarvestedUSD: number;
+    xFinaAge: number;
+    xFinaAgeDestroyed: number;
     updatedAt: number;
 }
 
@@ -32,24 +32,24 @@ export function observeInfo(): {
 
 
 type User = {
-    xSushi: number;
-    xSushiIn: number;
-    xSushiOut: number;
-    xSushiMinted: number;
-    xSushiBurned: number;
-    xSushiOffset: number;
-    xSushiAge: number;
-    xSushiAgeDestroyed: number;
-    sushiStaked: number;
-    sushiStakedUSD: number;
-    sushiHarvested: number;
-    sushiHarvestedUSD: number;
-    sushiIn: number;
-    sushiOut: number;
+    xFina: number;
+    xFinaIn: number;
+    xFinaOut: number;
+    xFinaMinted: number;
+    xFinaBurned: number;
+    xFinaOffset: number;
+    xFinaAge: number;
+    xFinaAgeDestroyed: number;
+    finaStaked: number;
+    finaStakedUSD: number;
+    finaHarvested: number;
+    finaHarvestedUSD: number;
+    finaIn: number;
+    finaOut: number;
     usdOut: number;
     usdIn: number;
     updatedAt: number;
-    sushiOffset: number;
+    finaOffset: number;
     usdOffset: number;
 }
 
